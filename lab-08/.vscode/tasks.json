@@ -7,12 +7,15 @@
       "command": "gcc",
       "args": [
         "-std=c17",
+        "-fopenmp",
         "-g",
         "${file}",
         "-o",
         "${fileDirname}/${fileBasenameNoExtension}.out"
       ],
-      "problemMatcher": ["$gcc"],
+      "problemMatcher": [
+        "$gcc"
+      ],
       "group": {
         "kind": "build",
         "isDefault": true
